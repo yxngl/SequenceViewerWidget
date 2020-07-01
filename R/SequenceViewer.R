@@ -6,7 +6,7 @@
 #'
 #' @export
 SequenceViewer <- function(sequence, peptide_start=NULL, peptide_end=NULL,
-                           underscore_position=NULL, coverage=list(), legend=NULL, width = NULL, height = NULL,
+                           highlight_position=NULL, coverage=list(), legend=NULL, width = NULL, height = NULL,
                            elementId = NULL) {
 
   # forward options using x
@@ -14,7 +14,7 @@ SequenceViewer <- function(sequence, peptide_start=NULL, peptide_end=NULL,
     sequence = sequence,
     peptide_start = peptide_start,
     peptide_end = peptide_end,
-    underscore_pos = underscore_position,
+    highlight_pos = highlight_position,
     domains=coverage,
     legend=legend
   )

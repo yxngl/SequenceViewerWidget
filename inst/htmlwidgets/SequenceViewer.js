@@ -16,7 +16,7 @@ HTMLWidgets.widget({
         seq.render("#" + el.id, {
 
         });
-        let comb = intersect(x.domains, {start: x.peptide_start, end: x.peptide_end, color: "black", underscore: false, bgcolor: "#ffd891"}, x.underscore_pos-1);
+        let comb = intersect(x.domains, {start: x.peptide_start, end: x.peptide_end, color: "black", underscore: false, bgcolor: "#ffd891"}, x.highlight_pos-1);
         seq.coverage(comb);
         if (x.legend) {
           seq.addLegend(x.legend);
